@@ -98,9 +98,7 @@ Test samodzielnie wykonuje wszystkie czynności w przeglądarce.
 
 ## 5. Assertions – weryfikacja wyników
 
-Automatyzacja nie polega wyłącznie na wykonywaniu czynności. Najważniejsza jest
-
-weryfikacja rezultatów. Playwright wykorzystuje asercje (assertions),
+Automatyzacja nie polega wyłącznie na wykonywaniu czynności. Najważniejsza jest weryfikacja rezultatów. Playwright wykorzystuje asercje (assertions),
 które określają, czego oczekujemy od aplikacji. 
 
 ### Przykładowe pytania
@@ -121,8 +119,7 @@ które określają, czego oczekujemy od aplikacji.
   ).toBeVisible();
 ```
 
-Samo wykonanie kliknięcia nie oznacza, że funkcjonalność działa
-poprawnie. Musimy jeszcze sprawdzić rezultat.
+Samo wykonanie kliknięcia nie oznacza, że funkcjonalność działa poprawnie. Musimy jeszcze sprawdzić rezultat.
 
 ---
 
@@ -150,8 +147,7 @@ Playwright wykorzystuje mechanizm Locatorów do identyfikowania elementów na st
   page.getByText('Witaj użytkowniku')
 ```
 
-Odwoływanie się do roli, nazwy i etykiety sprawia, że testy są
-czytelniejsze i mniej zależne od zmian struktury HTML.
+Odwoływanie się do roli, nazwy i etykiety sprawia, że testy są czytelniejsze i mniej zależne od zmian struktury HTML.
 
 ---
 
@@ -208,9 +204,7 @@ Dzięki temu nie trzeba wykonywać logowania przed każdym testem.
 
 ## 9. Network Mocking – kontrolowanie komunikacji z API
 
-Szczególnie przydatna funkcjonalność dla developerów frontendowych. Nie zawsze
-
-możemy przetestować wszystkie sytuacje na prawdziwym backendzie. 
+Szczególnie przydatna funkcjonalność dla developerów frontendowych. Nie zawsze możemy przetestować wszystkie sytuacje na prawdziwym backendzie. 
 
 ### Przykładowe scenariusze
 
@@ -242,9 +236,7 @@ możemy przetestować wszystkie sytuacje na prawdziwym backendzie.
 
 ## 10. API Testing – testowanie API bez przeglądarki
 
-Playwright umożliwia również bezpośrednie testowanie API REST. Nie musimy otwierać
-
-przeglądarki ani wykonywać interakcji z interfejsem użytkownika. Możemy
+Playwright umożliwia również bezpośrednie testowanie API REST. Nie musimy otwierać przeglądarki ani wykonywać interakcji z interfejsem użytkownika. Możemy
 wysyłać żądania HTTP bezpośrednio do backendu i sprawdzać odpowiedzi.
 
 ### Co możemy testować?
@@ -275,16 +267,13 @@ wysyłać żądania HTTP bezpośrednio do backendu i sprawdzać odpowiedzi.
   'https://ap
 ```
 
-API Testing to bezpośrednie testowanie backendu; Network Mocking to
-przechwytywanie i zastępowanie odpowiedzi obsługiwanych przez aplikację.
+API Testing to bezpośrednie testowanie backendu; Network Mocking to przechwytywanie i zastępowanie odpowiedzi obsługiwanych przez aplikację.
 
 ---
 
 ## 11. Parallel Execution – wykonywanie testów równolegle
 
-Playwright umożliwia równoległe wykonywanie niezależnych testów z wykorzystaniem
-
-workerów. 
+Playwright umożliwia równoległe wykonywanie niezależnych testów z wykorzystaniem workerów. 
 
 ### Korzyści
 
@@ -303,9 +292,7 @@ workerów.
 - Video – nagranie przebiegu testu.
 
 - Trace – szczegółowy zapis przebiegu testu. Trace pozwala odtworzyć
- przebieg testu i sprawdzić, co dokładnie wydarzyło się na każdym
- etapie. Dostępny jest również raport pokazujący wynik poszczególnych
- testów.
+ przebieg testu i sprawdzić, co dokładnie wydarzyło się na każdym etapie. Dostępny jest również raport pokazujący wynik poszczególnych testów.
 
 ---
 
@@ -320,9 +307,7 @@ Playwright można zintegrować z pipeline'em CI/CD. Przykładowy proces
 5. Playwright uruchamia przeglądarki lub testy API.
 6. Wykonywane są testy i asercje.
 7. Generowane są raporty oraz trace'y.
-8. Pipeline podejmuje decyzję o dalszym wdrożeniu. Jeżeli krytyczne
- testy przejdą pomyślnie – można kontynuować wdrożenie. Jeżeli
- zakończą się błędem – pipeline powinien zatrzymać wdrożenie.
+8. Pipeline podejmuje decyzję o dalszym wdrożeniu. Jeżeli krytyczne testy przejdą pomyślnie – można kontynuować wdrożenie. Jeżeli zakończą się błędem – pipeline powinien zatrzymać wdrożenie.
 
 ---
 
@@ -354,19 +339,13 @@ Playwright nie powinien zastępować wszystkich pozostałych rodzajów testów.
 
 ### 1. Unit Tests – testy jednostkowe
 
-- Sprawdzają pojedyncze funkcje i metody; są szybkie i testują małe,
- odizolowane fragmenty kodu. ### 2. Integration Tests – testy
- integracyjne
+- Sprawdzają pojedyncze funkcje i metody; są szybkie i testują małe, odizolowane fragmenty kodu. ### 2. Integration Tests – testy integracyjne
 
-- Sprawdzają współpracę kilku komponentów i komunikację między
- elementami systemu. 
+- Sprawdzają współpracę kilku komponentów i komunikację między elementami systemu. 
 
 ### 3. End-to-End Tests – testy E2E
 
-- Sprawdzają kompletną ścieżkę użytkownika i krytyczne procesy
- biznesowe. Playwright może wspierać testowanie API, integracji oraz
- krytycznych ścieżek E2E. Różne poziomy testów powinny się
- uzupełniać, a nie wzajemnie zastępować.
+- Sprawdzają kompletną ścieżkę użytkownika i krytyczne procesy biznesowe. Playwright może wspierać testowanie API, integracji oraz krytycznych ścieżek E2E. Różne poziomy testów powinny się uzupełniać, a nie wzajemnie zastępować.
 
 ---
 
@@ -380,11 +359,9 @@ Playwright to nie tylko narzędzie, które automatycznie klika w przeglądarce.
 
 - Testować API bez uruchamiania przeglądarki.
 
-- Weryfikować poprawność działania aplikacji i testować wiele silników
- przeglądarek.
+- Weryfikować poprawność działania aplikacji i testować wiele silników przeglądarek.
 
-- Automatycznie oczekiwać na gotowość elementów i izolować sesje
- testowe.
+- Automatycznie oczekiwać na gotowość elementów i izolować sesje testowe.
 
 - Mockować komunikację z API.
 
@@ -392,8 +369,5 @@ Playwright to nie tylko narzędzie, które automatycznie klika w przeglądarce.
 
 - Zbierać dowody błędów i odtwarzać ich przebieg.
 
-- Integrować testy z CI/CD i zatrzymywać wdrożenia, gdy krytyczne
- testy nie przechodzą. Playwright pozwala testować aplikację na
- różnych poziomach – od bezpośredniej komunikacji z API, przez
- integrację komponentów, aż po pełne scenariusze użytkownika w
+- Integrować testy z CI/CD i zatrzymywać wdrożenia, gdy krytyczne testy nie przechodzą. Playwright pozwala testować aplikację na różnych poziomach – od bezpośredniej komunikacji z API, przez integrację komponentów, aż po pełne scenariusze użytkownika w
  przeglądarce.
