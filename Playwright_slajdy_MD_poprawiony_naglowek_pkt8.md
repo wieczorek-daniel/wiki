@@ -33,9 +33,7 @@ Automatyzacja testów aplikacji webowych
 
 ## 2. Problem – dlaczego potrzebujemy automatyzacji?
 
-Wyobraźmy sobie, że tworzymy sklep internetowy. Za każdym razem, gdy zmieniamy kod
-
-aplikacji, ktoś musi sprawdzić, czy wszystko nadal działa. 
+Wyobraźmy sobie, że tworzymy sklep internetowy. Za każdym razem, gdy zmieniamy kod aplikacji, ktoś musi sprawdzić, czy wszystko nadal działa. 
 
 ### Przykładowa ścieżka użytkownika
 
